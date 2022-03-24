@@ -107,8 +107,7 @@ def clear():
 # Read example questions from file
 def getQuestions():
 	global q
-	with open('/Users/walker/Documents/Code/Python/Games/Trivia/baby_questions.txt', 'r') as file:
-	#with open('questions.txt', 'r') as file:
+	with open('questions.txt', 'r') as file:
 		for line in file.readlines():
 				q.append(Question.from_str(line))
 
